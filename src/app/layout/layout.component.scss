@@ -1,0 +1,25 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+  box-shadow: 3px 0 6px rgba(0,0,0,.24);
+}
+
+.spacer{
+  flex: 1 1 auto;
+}
+
+.red-style {
+  background: #c6010f;
+}
+.blue-style {
+  background: #1e24e8;
+}
+.green-style {
+  background: #01c629;
+}
+.yellow-style {
+  background: #ebf70c;
+}

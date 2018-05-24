@@ -1,7 +1,24 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import {LayoutComponent} from './layout/layout.component';
+import {CitiesComponent} from './cities/cities.component';
+import {ChartComponent} from './chart/chart.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: '', component: LayoutComponent,
+    children: [
+      {
+        path: 'taulukko',
+        component: CitiesComponent
+      },
+      {
+        path: 'chart',
+        component: ChartComponent
+      }
+    ]
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
